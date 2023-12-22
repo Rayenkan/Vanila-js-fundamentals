@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>body{
+            background-color: grey;
+        }
+        h1{
+            text-align: center;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            margin:5px;
+        }
+        img{
+            border: solid 2px black;
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+        }
+        img:hover{
+            border: solid 2 px yellow;
+        }
+        .preview img{
+            height: 600px;
+            width: 600px;
+            border: 2px solid blue;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>gallery</h1><br>
+    <div name="ts"><img src="img/1.jpg" name="img1" alt="" onmouseover="preview.src=img1.src"><img src="img/2.jpg" name="img2" alt="" onmouseover="preview.src=img2.src"><img src="img/3.jpg" name="img3" alt="" onmouseover="preview.src=img3.src"><img src="img/4.jpg" name="img4" alt="" onmouseover="preview.src=img4.src"></div>
+    <div class="preview"><img name="preview" src="img/1.jpg" alt=""></div>
+    
+</body>
+</html>

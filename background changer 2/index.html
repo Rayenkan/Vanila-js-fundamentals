@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+    <h1 style="text-align: center;">background color changer </h1><br>
+    <h4 style="text-align: center;">pick colors :</h4><br>
+    <div style="display: flex; justify-content: center;"><input type="color" name="" id="c"></div>
+</body>
+<script>
+    var color = document.getElementById("c");
+    color.addEventListener("input", function() {
+        document.body.style.background = color.value;
+    });
+</script>
+</html>
